@@ -4,12 +4,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Personal academic and research portfolio of Muhammad Adil Awal, S.Si., M.Si.">
-<title>Muhammad Adil Awal | Researcher</title>
+<meta name="description" content="Personal academic and research portfolio of M. Adil Awal, M.Sc.">
+<meta name="author" content="M. Adil Awal">
+<title>M. Adil Awal, M.Sc. | Researcher</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 :root {
@@ -20,9 +21,16 @@
   --line: #dddddd;
 }
 
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-html { scroll-behavior: smooth; scroll-padding-top: 85px; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
 
 body {
   font-family: 'Inter', sans-serif;
@@ -31,18 +39,23 @@ body {
   line-height: 1.75;
 }
 
-a { color: inherit; text-decoration: none; }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .container {
   width: min(1100px, 88%);
   margin: auto;
 }
 
+/* NAVIGATION */
+
 nav {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(250,250,250,.95);
+  background: rgba(250, 250, 250, .95);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--line);
 }
@@ -54,9 +67,15 @@ nav {
   justify-content: space-between;
 }
 
+/* MINIMALIST MAA WORDMARK */
+
 .logo {
-  font: 800 25px 'Manrope', sans-serif;
-  letter-spacing: -1.5px;
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: var(--black);
+  line-height: 1;
 }
 
 .nav-links {
@@ -67,7 +86,13 @@ nav {
   color: #555;
 }
 
-.nav-links a:hover { color: #000; }
+.nav-links a {
+  transition: color .2s;
+}
+
+.nav-links a:hover {
+  color: #000;
+}
 
 .menu-btn {
   display: none;
@@ -75,7 +100,10 @@ nav {
   border: 0;
   font-size: 25px;
   cursor: pointer;
+  color: var(--black);
 }
+
+/* HERO */
 
 .hero {
   padding: 120px 0 85px;
@@ -143,6 +171,8 @@ h1, h2, h3 {
   border-color: #666;
 }
 
+/* RESEARCH INTERESTS */
+
 .interests {
   border-top: 1px solid var(--line);
   padding: 32px 0 45px;
@@ -165,9 +195,15 @@ h1, h2, h3 {
   margin-top: 5px;
 }
 
-section { padding: 90px 0; }
+/* GENERAL SECTIONS */
 
-.grey-section { background: var(--light); }
+section {
+  padding: 90px 0;
+}
+
+.grey-section {
+  background: var(--light);
+}
 
 .section-label {
   font-size: 11px;
@@ -190,6 +226,8 @@ section { padding: 90px 0; }
   font-size: 16px;
 }
 
+/* EDUCATION */
+
 .info-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -202,12 +240,17 @@ section { padding: 90px 0; }
   border-top: 1px solid #ccc;
 }
 
-.info-item h3 { font-size: 18px; margin-bottom: 8px; }
+.info-item h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
 
 .info-item p {
   color: #666;
   font-size: 13px;
 }
+
+/* EXPERIENCE */
 
 .experience-box {
   border-left: 2px solid #999;
@@ -215,19 +258,27 @@ section { padding: 90px 0; }
   margin-top: 25px;
 }
 
-.experience-box h3 { font-size: 20px; margin-bottom: 8px; }
+.experience-box h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
 
 .experience-box p {
   color: #555;
   font-size: 14px;
 }
 
-.experience-box a, .contact-link {
+.experience-box a,
+.contact-link {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 
-.publication-list { margin-top: 35px; }
+/* PUBLICATIONS */
+
+.publication-list {
+  margin-top: 35px;
+}
 
 .publication {
   padding: 27px 0;
@@ -264,16 +315,24 @@ section { padding: 90px 0; }
   transition: .2s;
 }
 
-.pub-link:hover { color: #777; }
+.pub-link:hover {
+  color: #777;
+}
+
+/* CONTACT */
 
 .contact-section {
   background: var(--black);
   color: white;
 }
 
-.contact-section .section-label { color: #aaa; }
+.contact-section .section-label {
+  color: #aaa;
+}
 
-.contact-section .section-title { margin-bottom: 15px; }
+.contact-section .section-title {
+  margin-bottom: 15px;
+}
 
 .contact-intro {
   color: #bbb;
@@ -292,9 +351,14 @@ section { padding: 90px 0; }
 .contact-list a {
   color: #ddd;
   width: fit-content;
+  transition: color .2s;
 }
 
-.contact-list a:hover { color: white; }
+.contact-list a:hover {
+  color: white;
+}
+
+/* FOOTER */
 
 footer {
   background: var(--black);
@@ -310,6 +374,8 @@ footer {
   gap: 15px;
 }
 
+/* ANIMATION */
+
 .reveal {
   opacity: 0;
   transform: translateY(20px);
@@ -321,9 +387,18 @@ footer {
   transform: translateY(0);
 }
 
+/* MOBILE RESPONSIVE */
+
 @media(max-width: 700px) {
-  .nav-inner { min-height: 65px; }
-  .menu-btn { display: block; }
+
+  .nav-inner {
+    min-height: 65px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
   .nav-links {
     display: none;
     position: absolute;
@@ -336,26 +411,81 @@ footer {
     gap: 17px;
     border-bottom: 1px solid var(--line);
   }
-  .nav-links.active { display: flex; }
-  .hero { padding: 85px 0 65px; min-height: auto; }
-  .hero h1 { letter-spacing: -2px; }
-  .hero-description { font-size: 15px; }
-  section { padding: 65px 0; }
-  .interest-grid { grid-template-columns: 1fr; gap: 17px; }
-  .info-grid { grid-template-columns: 1fr; gap: 5px; }
-  .publication { grid-template-columns: 55px 1fr; gap: 12px; }
-  .pub-title { font-size: 15px; }
-  .footer-inner { flex-direction: column; }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hero {
+    padding: 85px 0 65px;
+    min-height: auto;
+  }
+
+  .hero h1 {
+    letter-spacing: -2px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+
+  section {
+    padding: 65px 0;
+  }
+
+  .interest-grid {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+
+  .publication {
+    grid-template-columns: 55px 1fr;
+    gap: 12px;
+  }
+
+  .pub-title {
+    font-size: 15px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media(prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }
 </style>
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
+
 <nav>
   <div class="container nav-inner">
-    <a href="#home" class="logo">MA.</a>
-    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+
+    <a href="#home" class="logo">MAA</a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">
+      ☰
+    </button>
+
     <ul class="nav-links" id="navLinks">
       <li><a href="#home">HOME</a></li>
       <li><a href="#about">ABOUT</a></li>
@@ -364,117 +494,187 @@ footer {
       <li><a href="#publications">PUBLICATIONS</a></li>
       <li><a href="#contact">CONTACT</a></li>
     </ul>
+
   </div>
 </nav>
 
+<!-- HOME -->
+
 <header class="container" id="home">
+
   <div class="hero reveal">
+
     <p class="eyebrow">Researcher · Agricultural Sciences</p>
-    <h1>Muhammad Adil Awal,<br>S.Si., M.Si.</h1>
+
+    <h1>M. Adil Awal, M.Sc.</h1>
+
     <p class="hero-description">
       Exploring the interactions between microorganisms and plants
       for sustainable agricultural applications.
     </p>
+
     <p class="hero-sub">
       Currently pursuing a Doctoral Degree in Agricultural Sciences.
     </p>
+
     <div class="buttons">
       <a href="#about" class="btn btn-dark">Explore My Profile ↗</a>
       <a href="#publications" class="btn">View Publications</a>
     </div>
+
   </div>
+
 </header>
 
+<!-- RESEARCH INTERESTS -->
+
 <div class="container interests reveal">
+
   <p class="eyebrow">Research Interests</p>
+
   <div class="interest-grid">
+
     <div class="interest-item">
       <strong>01</strong>
       <p>Microbiology</p>
     </div>
+
     <div class="interest-item">
       <strong>02</strong>
       <p>Plant–Microbe Interactions</p>
     </div>
+
     <div class="interest-item">
       <strong>03</strong>
       <p>Microbial Metabolites</p>
     </div>
+
   </div>
+
 </div>
 
+<!-- ABOUT -->
+
 <section class="grey-section" id="about">
+
   <div class="container reveal">
+
     <p class="section-label">01 / INTRODUCTION</p>
+
     <h2 class="section-title">About Me</h2>
+
     <p class="about-text">
-      I am Muhammad Adil Awal, a researcher with an academic
+      I am M. Adil Awal, a researcher with an academic
       background in Biology and a strong interest in microbiology,
       plant–microbe interactions, and microbial metabolites.
       My research explores the potential of beneficial microorganisms
       and their metabolites for plant health and sustainable agriculture.
       I am currently pursuing a doctoral degree in Agricultural Sciences.
     </p>
+
   </div>
+
 </section>
 
+<!-- EDUCATION -->
+
 <section id="education">
+
   <div class="container reveal">
+
     <p class="section-label">02 / ACADEMIC BACKGROUND</p>
+
     <h2 class="section-title">Education</h2>
 
     <div class="info-grid">
+
       <div class="info-item">
+
         <p class="pub-year">MASTER'S DEGREE</p>
+
         <h3>Master of Science (M.Si.)</h3>
+
         <p>Department of Biology</p>
         <p>Faculty of Mathematics and Natural Sciences</p>
         <p>Universitas Padjadjaran</p>
+
       </div>
 
       <div class="info-item">
+
         <p class="pub-year">BACHELOR'S DEGREE</p>
+
         <h3>Bachelor of Science (S.Si.)</h3>
+
         <p>Department of Biology</p>
         <p>Faculty of Mathematics and Natural Sciences</p>
         <p>Universitas Padjadjaran</p>
+
       </div>
+
     </div>
 
     <div class="info-item">
+
       <p class="pub-year">CURRENTLY PURSUING</p>
+
       <h3>Doctoral Program in Agricultural Sciences</h3>
+
       <p>Doctoral Researcher</p>
+
     </div>
+
   </div>
+
 </section>
 
+<!-- PROFESSIONAL EXPERIENCE -->
+
 <section class="grey-section" id="experience">
+
   <div class="container reveal">
+
     <p class="section-label">03 / PROFESSIONAL BACKGROUND</p>
+
     <h2 class="section-title">Professional Experience</h2>
 
     <div class="experience-box">
+
       <p class="pub-year">CURRENT POSITION</p>
+
       <h3>Researcher — IndoSRInet</h3>
+
       <p>
         Currently working as a researcher at IndoSRInet,
         alongside doctoral studies in Agricultural Sciences.
       </p>
+
       <p style="margin-top:14px">
+
         <a href="https://indosrinet.org/tentang-kami/"
-           target="_blank" rel="noopener noreferrer">
+           target="_blank"
+           rel="noopener noreferrer">
           Learn more about IndoSRInet ↗
         </a>
+
       </p>
+
     </div>
+
   </div>
+
 </section>
 
+<!-- PUBLICATIONS -->
+
 <section id="publications">
+
   <div class="container reveal">
+
     <p class="section-label">04 / SCIENTIFIC CONTRIBUTIONS</p>
+
     <h2 class="section-title">Selected Publications</h2>
+
     <p class="about-text">
       Research contributions in microbiology, biological control,
       plant–microbe interactions, and sustainable agriculture.
@@ -483,78 +683,126 @@ footer {
     <div class="publication-list">
 
       <article class="publication">
+
         <div class="pub-year">2026</div>
+
         <div>
           <p class="pub-journal">Plant Signaling & Behavior</p>
+
           <h3 class="pub-title">
             Pre-exposure to UV-B irradiation induces antioxidant
             enzymes and mitigates <i>Fusarium acutatum</i> stress
             in shallot (<i>Allium cepa</i> L.)
           </h3>
-          <a class="pub-link" href="https://doi.org/10.1080/15592324.2026.2716981"
-             target="_blank" rel="noopener noreferrer">Read Article ↗</a>
+
+          <a class="pub-link"
+             href="https://doi.org/10.1080/15592324.2026.2716981"
+             target="_blank"
+             rel="noopener noreferrer">
+            Read Article ↗
+          </a>
         </div>
+
       </article>
 
       <article class="publication">
+
         <div class="pub-year">2026</div>
+
         <div>
           <p class="pub-journal">Journal of Plant Interactions</p>
+
           <h3 class="pub-title">
             Elucidating the biocontrol potential of
             <i>Trichoderma yunnanense</i> TM10 for managing sheath
             blight disease (<i>Rhizoctonia solani</i> Kühn)
             in rice (<i>Oryza sativa</i> L.)
           </h3>
-          <a class="pub-link" href="https://doi.org/10.1080/17429145.2026.2651842"
-             target="_blank" rel="noopener noreferrer">Read Article ↗</a>
+
+          <a class="pub-link"
+             href="https://doi.org/10.1080/17429145.2026.2651842"
+             target="_blank"
+             rel="noopener noreferrer">
+            Read Article ↗
+          </a>
         </div>
+
       </article>
 
       <article class="publication">
+
         <div class="pub-year">2026</div>
+
         <div>
-          <p class="pub-journal">Journal of Agriculture and Food Research</p>
+          <p class="pub-journal">Journal information to be confirmed</p>
+
           <h3 class="pub-title">
             Plant growth-promoting rhizobacteria for controlling
             rice diseases: What is known and what is next?
           </h3>
-          <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S2666154326002048"
-             target="_blank" rel="noopener noreferrer">Read Article ↗</a>
+
+          <a class="pub-link"
+             href="https://www.sciencedirect.com/science/article/pii/S2666154326002048"
+             target="_blank"
+             rel="noopener noreferrer">
+            Read Article ↗
+          </a>
         </div>
+
       </article>
 
       <article class="publication">
+
         <div class="pub-year">2026</div>
+
         <div>
           <p class="pub-journal">Cogent Food & Agriculture</p>
+
           <h3 class="pub-title">
             Plant growth-promoting fungi (PGPF) for controlling
             rice diseases: A sustainable approach
           </h3>
-          <a class="pub-link" href="https://www.tandfonline.com/doi/full/10.1080/23311932.2025.2610015"
-             target="_blank" rel="noopener noreferrer">Read Article ↗</a>
+
+          <a class="pub-link"
+             href="https://www.tandfonline.com/doi/full/10.1080/23311932.2025.2610015"
+             target="_blank"
+             rel="noopener noreferrer">
+            Read Article ↗
+          </a>
         </div>
+
       </article>
 
       <article class="publication">
+
         <div class="pub-year">2025</div>
+
         <div>
           <p class="pub-journal">Journal of Agriculture and Food Research</p>
+
           <h3 class="pub-title">
             Entomopathogenic, Antifeedant, and Repellent Activities
             of Indigenous <i>Trichoderma</i> sp. LB1 for managing
             Common Cutworm, <i>Spodoptera litura</i> (Fabricius)
           </h3>
-          <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S2666154325006398"
-             target="_blank" rel="noopener noreferrer">Read Article ↗</a>
+
+          <a class="pub-link"
+             href="https://www.sciencedirect.com/science/article/pii/S2666154325006398"
+             target="_blank"
+             rel="noopener noreferrer">
+            Read Article ↗
+          </a>
         </div>
+
       </article>
 
       <article class="publication">
+
         <div class="pub-year">2025</div>
+
         <div>
           <p class="pub-journal">Current Research in Microbial Sciences</p>
+
           <h3 class="pub-title">
             Deciphering the biocontrol strategies of
             <i>Trichoderma yunnanense</i> TM10 against
@@ -562,105 +810,173 @@ footer {
             the causal agent of wilt disease in shallots
             (<i>Allium cepa</i> var. <i>aggregatum</i>)
           </h3>
-          <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S2666517425001452"
-             target="_blank" rel="noopener noreferrer">Read Article ↗</a>
+
+          <a class="pub-link"
+             href="https://www.sciencedirect.com/science/article/pii/S2666517425001452"
+             target="_blank"
+             rel="noopener noreferrer">
+            Read Article ↗
+          </a>
         </div>
+
       </article>
 
       <article class="publication">
+
         <div class="pub-year">2025</div>
+
         <div>
           <p class="pub-journal">Cogent Food & Agriculture</p>
+
           <h3 class="pub-title">
             Effects of UV-B irradiation on the induction of
             physiological traits and defense enzyme activities
             in shallots (<i>Allium cepa</i> L.) against
             <i>Fusarium acutatum</i> infection
           </h3>
-          <a class="pub-link" href="https://www.tandfonline.com/doi/full/10.1080/23311932.2025.2590788"
-             target="_blank" rel="noopener noreferrer">Read Article ↗</a>
+
+          <a class="pub-link"
+             href="https://www.tandfonline.com/doi/full/10.1080/23311932.2025.2590788"
+             target="_blank"
+             rel="noopener noreferrer">
+            Read Article ↗
+          </a>
         </div>
+
       </article>
 
       <article class="publication">
+
         <div class="pub-year">2024</div>
+
         <div>
           <p class="pub-journal">Symbiosis</p>
+
           <h3 class="pub-title">
             Multi-omics Tools for Understanding
             <i>Trichoderma</i>–Plant Symbiosis:
             Biotechnological Developments and Future Directions
           </h3>
-          <a class="pub-link" href="https://link.springer.com/article/10.1007/s13199-024-00996-2"
-             target="_blank" rel="noopener noreferrer">Read Article ↗</a>
+
+          <a class="pub-link"
+             href="https://link.springer.com/article/10.1007/s13199-024-00996-2"
+             target="_blank"
+             rel="noopener noreferrer">
+            Read Article ↗
+          </a>
         </div>
+
       </article>
 
       <article class="publication">
+
         <div class="pub-year">2024</div>
+
         <div>
           <p class="pub-journal">Plant Stress</p>
+
           <h3 class="pub-title">
             Microbial secondary metabolites for modulating plant
             biotic stress resistance: Bridging the lab-field gap
           </h3>
-          <a class="pub-link" href="https://www.sciencedirect.com/science/article/pii/S2667064X24003737"
-             target="_blank" rel="noopener noreferrer">Read Article ↗</a>
+
+          <a class="pub-link"
+             href="https://www.sciencedirect.com/science/article/pii/S2667064X24003737"
+             target="_blank"
+             rel="noopener noreferrer">
+            Read Article ↗
+          </a>
         </div>
+
       </article>
 
       <article class="publication">
+
         <div class="pub-year">2024</div>
+
         <div>
           <p class="pub-journal">Cogent Food & Agriculture</p>
+
           <h3 class="pub-title">
             Mechanisms of Action and Biocontrol Potential of
             <i>Trichoderma</i> against <i>Fusarium</i>
             in Horticultural Crops
           </h3>
-          <a class="pub-link" href="https://www.tandfonline.com/doi/full/10.1080/23311932.2024.2394685"
-             target="_blank" rel="noopener noreferrer">Read Article ↗</a>
+
+          <a class="pub-link"
+             href="https://www.tandfonline.com/doi/full/10.1080/23311932.2024.2394685"
+             target="_blank"
+             rel="noopener noreferrer">
+            Read Article ↗
+          </a>
         </div>
+
       </article>
 
     </div>
+
   </div>
+
 </section>
 
+<!-- CONTACT -->
+
 <section class="contact-section" id="contact">
+
   <div class="container reveal">
+
     <p class="section-label">05 / GET IN TOUCH</p>
+
     <h2 class="section-title">Let's Connect.</h2>
+
     <p class="contact-intro">
       Open to research collaboration, academic networking,
       and professional opportunities.
     </p>
 
     <div class="contact-list">
+
       <a href="mailto:adilawal300@gmail.com">
         Email — adilawal300@gmail.com ↗
       </a>
+
       <a href="tel:+6281224879163">
         Phone — +62 81 224 879 163
       </a>
+
       <a href="https://orcid.org/0009-0005-5635-6887"
-         target="_blank" rel="noopener noreferrer">
+         target="_blank"
+         rel="noopener noreferrer">
         ORCID — 0009-0005-5635-6887 ↗
       </a>
+
       <a href="https://www.linkedin.com/in/muhammad-adil-awal/"
-         target="_blank" rel="noopener noreferrer">
-        LinkedIn — Muhammad Adil Awal ↗
+         target="_blank"
+         rel="noopener noreferrer">
+        LinkedIn — M. Adil Awal ↗
       </a>
+
     </div>
+
   </div>
+
 </section>
 
+<!-- FOOTER -->
+
 <footer>
+
   <div class="container footer-inner">
-    <p>© 2026 Muhammad Adil Awal. All rights reserved.</p>
+
+    <p>© 2026 M. Adil Awal, M.Sc. All rights reserved.</p>
+
     <p>Designed with simplicity and purpose.</p>
+
   </div>
+
 </footer>
+
+<!-- JAVASCRIPT -->
 
 <script>
 const menuBtn = document.getElementById('menuBtn');
@@ -683,7 +999,9 @@ const observer = new IntersectionObserver(entries => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, {
+  threshold: 0.12
+});
 
 document.querySelectorAll('.reveal').forEach(element => {
   observer.observe(element);
